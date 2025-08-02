@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TataOnly Chat</title>
+    <link rel="stylesheet" href="bot.css">
+    <link rel="icon" type="image/png" href="/assets/bot/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/bot/favicons/favicon.svg" />
+<link rel="shortcut icon" href="/assets/bot/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/bot/favicons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="TataOnly " />
+<link rel="manifest" href="/assets/bot/favicons/site.webmanifest" />
+
+
+  <title>TataOnly 🤖 | Chat Exclusivo com a Tata</title>
+  <meta name="description" content="Converse diretamente com TataOnly. Sinta o calor das respostas e descubra o que ela tem a te mostrar.">
+
+  <!-- SEO -->
+  <meta name="robots" content="noindex, follow">
+  <meta name="author" content="TataOnly">
+  <meta name="theme-color" content="#8B0000">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TataOnly 🤖 | Chat Picante e Interativo">
+  <meta property="og:description" content="Sinta o calor das respostas... TataOnly vai te deixar sem palavras.">
+  <meta property="og:image" content="https://SEUSITE.github.io/assets/img/preview-chat.jpg">
+  <meta property="og:url" content="https://SEUSITE.github.io/bot.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chat com a Tata 🔥 | Exclusivo e Indecente">
+  <meta name="twitter:description" content="Converse com TataOnly e veja até onde ela vai...">
+  <meta name="twitter:image" content="https://SEUSITE.github.io/assets/img/preview-chat.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+
+
+
+
+
+    <style>
+        /* Estilos específicos para o botão de voltar */
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            color: #ff3366;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Responsividade do botão */
+        @media (max-width: 600px) {
+            .back-button {
+                top: 10px;
+                right: 10px;
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .back-button {
+                top: 5px;
+                right: 5px;
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container" id="chatContainer">
+        <!-- Botão de voltar adicionado aqui -->
+        <button class="back-button" onclick="window.location.href='../../index.html'">↩ Voltar</button>
+        
+        <header class="chat-header">
+            <div class="profile">
+               <img src="profile.jpg" alt="TataOnly" class="profile-pic">
+                <div class="profile-info">
+                    <h1>TataOnly</h1>
+                    <p class="status">online</p>
+                </div>
+            </div>
+        </header>
+        
+        <main class="chat-messages" id="chatMessages">
+            <!-- Mensagens serão inseridas aqui via JavaScript -->
+        </main>
+        
+        <div class="chat-options" id="chatOptions">
+            <!-- Opções serão inseridas aqui via JavaScript -->
+        </div>
+    </div>
+
+    <script type="module" src="data.js"></script>
+    <script type="module" src="bot.js"></script>
+</body>
+</html>
